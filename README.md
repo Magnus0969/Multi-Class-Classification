@@ -1,15 +1,38 @@
-# Multi-Class-Classification Using Keras & VG16
-This repository contains a project focused on multiclass classification of images using the Keras library and the VGG16 pre-trained model. The primary objective is to accurately classify images into multiple categories using a convolutional neural network (CNN) model fine-tuned for this specific task.
+# Multi-Class Classification
 
-# Features
-Data Augmentation: Utilizes Keras' ImageDataGenerator for data augmentation, including rescaling, rotation, shifting, shearing, zooming, and horizontal flipping.
-Transfer Learning: Implements the VGG16 model pre-trained on ImageNet, with custom top layers added for the classification task.
-Model Fine-tuning: Freezes the initial layers of VGG16 and fine-tunes the last few layers to adapt the model to the new dataset.
-Training and Validation: Splits the dataset into training and validation sets to evaluate the model's performance during training.
-Evaluation Metrics: Includes model evaluation using loss and accuracy metrics, along with a detailed classification report.
+This repository contains an implementation of a **Multi-Class Classification** model using machine learning techniques. The project demonstrates how to train, evaluate, and optimize a classifier for handling multiple categories in a dataset.
 
-# Results
-The model achieves notable accuracy on the validation set, demonstrating effective multiclass classification capabilities. Detailed performance metrics and a classification report are provided in the notebook.
+## 🚀 Features
+- Preprocessing and feature engineering for multi-class classification.
+- Model training using machine learning algorithms.
+- Performance evaluation with relevant metrics.
+- Hyperparameter tuning for model optimization.
 
-# Contributing
-Contributions are welcome! Feel free to submit issues or pull requests to enhance the project.
+## 📌 Requirements
+Install the dependencies using:
+```bash
+pip install -r requirements.txt
+```
+
+## 🔥 Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Magnus0969/Multi-Class-Classification.git
+   cd Multi-Class-Classification
+   ```
+2. Run the training script:
+   ```bash
+   python scripts/train.py
+   ```
+3. Evaluate the model:
+   ```bash
+   python scripts/evaluate.py
+   ```
+
+## 📊 Evaluation Metrics
+- **Accuracy**
+- **Precision, Recall, F1-score**
+- **Confusion Matrix**
+
+## 📜 License
+This project is licensed under the MIT License.
